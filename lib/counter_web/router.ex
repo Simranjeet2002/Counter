@@ -17,8 +17,9 @@ defmodule CounterWeb.Router do
   scope "/", CounterWeb do
     pipe_through :browser
 
+    #get "/", PageController, :index
     live "/",PageLive
-   # get "/", PageController, :index
+
   end
 
   # Other scopes may use custom stacks.
